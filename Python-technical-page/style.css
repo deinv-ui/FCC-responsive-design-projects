@@ -16,7 +16,7 @@ body {
   font-size: 1em;
   font-weight: 500;
   line-height: 1.5;
-  scroll-behaviour: smooth；
+  scroll-behavior: smooth;
     
 }
 
@@ -73,7 +73,7 @@ a {
 /**Python Documentation**/
 .main-section {
   margin-left: 300px;
-}*/
+}
 #header {
  color: #A5E8F4;
  font-weight: bold;

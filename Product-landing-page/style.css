@@ -107,7 +107,7 @@ button:hover {
 
 .submit-button:hover {
   background-color: orange;
-  font-color: white;
+  color: white;
 }
 
 #submit {

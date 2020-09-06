@@ -2,9 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
   <title>Dein Portfolio</title>
 </head>
 
@@ -16,9 +19,15 @@
     <li>
       <a href="#welcome-section">About</a>
     </li>
-    <li>
-      <a href="#projects">Work</a>
+    <li class="dropdown">
+      <a class="workbtn" href="#projects">Work</a>
+      <div class="workbtn-content">
+        <a href="#illustration">Illustration</a>
+        <a href="#ui-design">UI Design</a>
+        <a href="web-design">Web Design</a>
+      </div>
     </li>
+
     <li>
       <a href="#contact">Contact</a>
     </li>
@@ -27,8 +36,10 @@
 
 <!--WELCOME-->
 <section id="welcome-section" class="welcome-section">
-  <h1>Hey I am Dein</h1>
+  <h1>Tan De Xin</h1>
     <p>a web developer</p>
+    <a href="#projects"><button class="click" id="more">More</button>
+      </a>
 </section>
 
 

@@ -19,20 +19,21 @@
   
   /*STYLE*/
   body {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
     text-align: center;
-    color: var(--main-white);
+    color: black;
   }
   
   h1, h2 {
-    font-family: 'Russo One', sans-serif;
-    font-weight: 100;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-weight: 400;
     text-align: center;
   }
   
   h1 {
     font-size: 6rem;
+    font-weight: 900;
   }
   
   h2 {
@@ -49,7 +50,7 @@
   
   a {
     text-decoration: none;
-    color: black;
+    color: var(--main-white);
   }
   
   img {
@@ -57,6 +58,30 @@
     width: 100%;
   }
   
+  /*BUTTON*/
+ .click {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border-color: white; 
+    border-width:  medium 10px solid white;
+    background: none;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 30px rgb(185, 185, 185);
+    margin-top: 15px;
+  }
+
+  .more a:hover {
+    width: 180px;
+    height: 40px;
+    background: black;
+    color: white;
+
+  }
   
   /*NAVBAR*/
   
@@ -68,8 +93,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 65px;
-    background-color: gold;
+    height: 60px;
+    background-color: #333;
     
     z-index: 10;
   }
@@ -77,22 +102,56 @@
   .nav-list {
     display: flex;
     justify-content: space-around;
-    width: 600px;
-    margin-right: 2rem;
+    width: 450px;
+    margin-right: 1rem;
+    color: whitesmoke;
   } 
   
   .nav-list a {
     display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
+    font-size: 2rem;
+    padding: 1.5rem;
   }
   
   .nav-list a:hover {
-    background: #FFC300;
-    height: 65px;
+    background: #111;
+    display: block;
+    height: 60px;
     
   }
+
+
+  li.dropdown {
+    display: inline-block;
+  }
   
+  .workbtn-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    min-height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .workbtn-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .workbtn-content a:hover {
+    background-color: #111;
+    margin: 0;
+  }
+
+  .dropdown:hover .workbtn-content {
+  display: block;
+}
+
   /*WELCOME*/
   .welcome-section {
     display: flex;
@@ -101,8 +160,15 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    
+    background-image: url(https://images.pexels.com/photos/4506937/pexels-photo-4506937.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    min-height: 80%;
+    background-attachment: fixed;
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+  
   }
   
   .welcome-section p {
@@ -113,7 +179,7 @@
   }
   
   .welcome-section h1 {
-    color: var(--main-white);
+    color: white;
   }
   
   
@@ -121,7 +187,7 @@
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #FFE1AF;
+    background: hsla(246, 69%, 25%, 0.965);
   }
   
   .projects-section-header {
@@ -154,7 +220,7 @@
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: hsl(180, 39%, 44%);
   }
   
   .contact-sections a {
@@ -181,6 +247,6 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-gray);
+    background: hsl(0, 0%, 7%);
     border-top: 4px solid var(--dark-gold);
   }
