@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Horror Games Survey-- FCC - Build a Survey Form - Responsive Design</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+    <h1 id="title">Horror Games Survey Form</h1>
+
+    <p id="description" class="description text-center">
+      Thank you for taking the time to fill the form
+    </p>
+  </header>
+<div class="container">
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        class="form-control"
+        placeholder="Joe Li"
+        autocomplete="on" 
+        autofocus 
+        required />
+    </div>
+
+    
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="gender-label" for="gender">Gender</label>
+      
+     <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+        
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          class="form-control"
+          placeholder="joelie1@gmail.com"  
+          required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input 
+          type="number" 
+          name="age" 
+          id="number"
+          min="10" 
+          max="99" 
+          class="form-control"
+          placeholder="Age" />
+      </div>
+      
+     <div class="form-group">
+      <label id="questions">
+      <p>Have you ever played a horror game?</p>
+       <label>
+        <input 
+          type="radio" 
+          id="yes" 
+          name="everplay" 
+          value="yes"
+          class="input-radio"
+          checked>
+          Yes</label>
+        
+        <label>
+        <input 
+          type="radio" 
+          id="no" 
+          name="everplay" 
+          value="no"
+          class="input-radio">
+          No</label>
+        
+       </label>
+       </div>
+      
+      
+      <div class="form-group">
+      <label id="questions">
+      <p> How long will you play horror games in a single sitting?</p>
+        
+         <label>
+        <input 
+          type="radio" 
+          id="less1" 
+          name="time" 
+          value="less1"
+          class="input-radio">
+          Less than an hour</label>
+        
+        <label>
+        <input 
+          type="radio" 
+          id="twosix" 
+          name="time" 
+          value="twosix"
+          class="input-radio">
+          2-6 hours</label>
+        
+        <label>
+        <input 
+          type="radio" 
+          id="five8" 
+          name="time" 
+          value="five8"
+          class="input-radio">
+          5-8 hours</label>
+        
+       </label>
+       </div>
+
+      
+      
+      <div class="form-group">
+      <label id="questions">
+      <p> How many different genres of horror games have you played?</p>
+        
+        <label>
+          <input
+          name="genre"
+          value="platform"
+          type="checkbox"
+          class="input-checkbox"
+        />Platform</label
+      >
+         <label>
+          <input
+          name="genre"
+          value="shooter"
+          type="checkbox"
+          class="input-checkbox"
+        />Shooter</label
+      >
+          <label>
+          <input
+          name="genre"
+          value="action"
+          type="checkbox"
+          class="input-checkbox"
+        />Action</label
+      >
+         <label>
+          <input
+          name="genre"
+          value="roleplaying"
+          type="checkbox"
+          class="input-checkbox"
+        />Role Playing</label
+      >
+        <label>
+          <input
+          name="genre"
+          value="multiplayer"
+          type="checkbox"
+          class="input-checkbox"
+        />Multiplayer</label
+      >
+     </label>
+       </div>  
+      
+      <div class="form-group">
+      <label id="questions">
+      <p> Which of the answers below gives you a form of anxiety/fear?</p>
+        
+        <label>
+          <input
+          name="fear"
+          value="insects"
+          type="checkbox"
+          class="input-checkbox"
+        />Insects</label
+      >
+         <label>
+          <input
+          name="fear"
+          value="height"
+          type="checkbox"
+          class="input-checkbox"
+        />Height</label
+      >
+          <label>
+          <input
+          name="fear"
+          value="clown"
+          type="checkbox"
+          class="input-checkbox"
+        />Clown</label
+      >
+         <label>
+          <input
+          name="fear"
+          value="darkness"
+          type="checkbox"
+          class="input-checkbox"
+        />Darkness</label
+      >
+        <label>
+          <input
+          name="fear"
+          value="serialkiller"
+          type="checkbox"
+          class="input-checkbox"
+        />Serial Killer</label
+      >
+     </label>
+        
+        <label id="comment-label">
+        <p>Others, please specify:</p>
+        <textarea 
+              id="comment" 
+              class="comment-box"
+              name="comment" 
+              placeholder=" What fears you more?"></textarea>
+          </label>
+       </div>  
+      
+      
+      <div class="form-group">
+      <label id="questions">
+      <p> What is the most exciting or creepiest game you ever play?</p>
+        
+        <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Silent Hills</option>
+        <option value="projects">Resident Evil</option>
+        <option value="community">Until Dawn</option>
+        <option value="openSource">Outlast</option>
+      </select>
+      
+     <label id="comment-label">
+     <p>Others, please specify:</p>
+        <textarea 
+              id="comment" 
+              class="comment-box"
+              name="comment" 
+              placeholder=" What game is the creepiest?"></textarea>
+      </label>
+        </label>
+    </div>
+        
+      
+      <div class="form-group">
+        <p id="comment-label">Please leave any of your thoughts here:</p>
+    <textarea id="comment" 
+              class="comment-box"
+              name="comment" 
+              placeholder=" Leave a comment to tell us more about your feeling."></textarea>
+      </div>
+        
+      
+      <div class="form-group">
+      <button 
+        type="submit" 
+        id="submit"
+        class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+  
+      <footer class="footer">
+    <h6>2020 &#169; 
+     <a href="https://codepen.io/deinv-ui" target="_blank">Deinv-ui</a> || A Free Code Camp Project</h6>
+  </footer>
+   
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- partial -->
+  
+</body>
+</html>
